@@ -2,7 +2,6 @@ ps2pdf
 ======
 
 GhostScript wrapper for ps concatenation and distilling
--------------------------------------------------------
 
 Whatches a configured directory for ps concatination files using prun commands.
 
