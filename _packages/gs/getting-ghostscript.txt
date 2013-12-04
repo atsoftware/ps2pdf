@@ -1,0 +1,2 @@
+Please download the ghostscript version for your os and your desired license on:
+http://www.ghostscript.com/download/

@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PS2PDF.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="InputFileFilter" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">*.ps</Value>
+    </Setting>
+    <Setting Name="NumWorkerThreads" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="WriteJobLogFiles" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WorkingFolderPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">.\work</Value>
+    </Setting>
+    <Setting Name="KeepSourceFiles" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="InputFolderPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\temp\ps2pdf\input</Value>
+    </Setting>
+    <Setting Name="OutputFolderPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\temp\ps2pdf\output</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

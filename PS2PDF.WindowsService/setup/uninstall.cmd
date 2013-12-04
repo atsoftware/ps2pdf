@@ -1,0 +1,1 @@
+installutil\installutil.exe /u ..\PS2PDF.WindowsService.exe
