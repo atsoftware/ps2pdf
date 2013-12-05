@@ -83,10 +83,13 @@ namespace PS2PDF
                 serviceHost.Open();
                 log.Info(string.Format("ServiceControlHost listening on: {0}", DistillingServiceControlConstants.NamedPipesUriAndAddress));
 
-                fsWatcher = new FileSystemWatcher(inputFolderPath, inputFileFilter);
+                fsWatcher = new FileSystemWatcher(inputFolderPath);
                 fsWatcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName;
                 fsWatcher.Created += (sender, eventargs) =>
                 {
+                    if(!eventargs.Name.ToLower().EndsWith(inputFileFilter.Replace("*", "").ToLower()))
+                        return;
+
                     ProcessJob job = new ProcessJob(eventargs.Name, eventargs.FullPath);
                     openJobs.Add(job);
                 
