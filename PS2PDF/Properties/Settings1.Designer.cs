@@ -97,5 +97,14 @@ namespace PS2PDF.Properties {
                 this["OutputFolderPath"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("iso-8859-2")]
+        public string InputFileEncoding {
+            get {
+                return ((string)(this["InputFileEncoding"]));
+            }
+        }
     }
 }

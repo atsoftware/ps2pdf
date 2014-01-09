@@ -72,7 +72,8 @@ namespace PS2PDF
 
                 // ########## ANALYSE INPUT FILE #########################################################################################
 
-                var allLines = File.ReadAllLines(workingFilePath);
+                string encoding = Properties.Settings.Default.InputFileEncoding;
+                var allLines = File.ReadAllLines(workingFilePath, Encoding.GetEncoding(encoding));
                 
                 List<string> filesToConcat = allLines.Skip(8)                                                                // skip first 8 lines
                                                      .Select(s => s.TrimStart('(').Replace(") prun", "").Replace("/", "\\")) // remove "(" .. ") prun" and turn slashes to backslashes
