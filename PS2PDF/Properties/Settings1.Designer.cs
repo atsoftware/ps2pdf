@@ -64,7 +64,7 @@ namespace PS2PDF.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool KeepSourceFiles {
             get {
                 return ((bool)(this["KeepSourceFiles"]));

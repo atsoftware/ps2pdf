@@ -15,7 +15,7 @@
       <Value Profile="(Default)">.\work</Value>
     </Setting>
     <Setting Name="KeepSourceFiles" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="InputFolderPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\temp\ps2pdf\input</Value>

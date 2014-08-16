@@ -124,7 +124,7 @@ namespace PS2PDF
                 gsProcess.StartInfo.UseShellExecute = false;
                 gsProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
                 gsProcess.StartInfo.FileName = string.Format("gswin{0}.exe", (IntPtr.Size == 8 ? "64" : "32")); // choose 64bit exe if we're running as a 64bit process.
-                gsProcess.StartInfo.Arguments = string.Format(" -sDEVICE=\"pdfwrite\" -q -dQUIET -dNOPAUSE -dSAFER -dBATCH -sOUTPUTFILE=\"{0}\" {1}",
+                gsProcess.StartInfo.Arguments = string.Format(" -sDEVICE=\"pdfwrite\" -q -dQUIET -dNOPAUSE -dSAFER -dBATCH -dPDFSETTINGS=/ebook -sOUTPUTFILE=\"{0}\" {1}",
                     outfilePath,
                     string.Join(" ", filesToConcat.Select(s => "\"" + s + "\"")));
                 
